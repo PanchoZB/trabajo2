@@ -1,0 +1,29 @@
+﻿@model trabajo2.Models.PromedioViewModel
+<html>
+    <head>
+        <title>Calificaciones</title>
+    </head>
+    <body>
+        <form action="~/Home/Index">
+        <label>Coloque sus calificaciones</label><br />
+    <label>Calificacion 1</label>
+    <input type="number" name="Materia1" value="@Model.Materia1"/> <br/>
+    <label>Calificacion 2</label>
+    <input type="number" name="Materia2" value="@Model.Materia2"/>
+    <br />
+    <label>Calificacion 3</label>
+    <input type="number" name="Materia3" value="@Model.Materia3"/>
+    <br />
+   
+    <br />
+    <input type="submit" value="Promediar" />
+    <br />
+    <br />
+    <label>Promedio Final:</label>
+    <input type="number" readonly value="@Model.Promedio" />
+    <br />
+    <br />
+    <input readonly value="@Model.Frase" />
+    </form>
+    </body>
+</html>
